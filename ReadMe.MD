@@ -137,6 +137,6 @@ void main()
 ```
 ###### Bitwise
 
->> "&" AND : 
->>  "|" OR : 
->> "^" XOR or Exclusive OR : 
+> "&" AND : 
+>  "|" OR : 
+> "^" XOR or Exclusive OR : 
