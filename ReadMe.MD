@@ -1,0 +1,142 @@
+# Operators
+
+### There are 5 types of operators in C language
+
++ Arithmetic Operators
++ Relational Operators
++ Logical Operators
++ Bitwise Operators
++ Assignment Operators
+
+##### Arithmetic Operators
+
+Operators such as :
+
+> "+" Addition
+> "-" Subtraction
+> "*" Multiplication
+> "/" Division
+> "%" Modulus
+
+Use cases:
+```C
+{
+    int a = 10 ; // Addition
+    float b = 20.25 ;
+
+    printf("The sum of %d and %.f is: %d \n", a, b, a+b); // This will return the answer as it demands to return the sum of float and integer in float.
+    
+    int c ; // Subtraction
+    float d ; 
+    
+    c = 10;
+    d = 5.5;
+
+    printf("The subtraction of %d from %.f is: %d \n", c, d, c-d); // This will return the answer as it demands to return the subtraction of float and integer in float.
+    
+    int e = 12 ; // Multiplication
+    float f = 2.5 ;
+
+    printf("The multiplication of %d and %.2f is: %d \n", e, f, e*f); // This will return the answer as it demands to return the multiplication of float and integer in float.
+    
+    int g = 10 ; // division
+    float h = 2.5 ; 
+
+    printf("The division of %d by %.f is: %.2f \n", g, h, g/h ); // This will return the answer as it demands to return the division of float and integer in float.
+    
+    int i = 10 ; // Modulus
+    /* float j = 2 ;
+    printf("The modulus of %d by %f is: %.2f \n", i, j, i % j ); This incorrect because in modulus, you cannot calculate using floats. */
+    int j = 6 ;
+    printf("The modulus of %d by %d is: %d", i, j, i%j ); // This will return answer as it demands both operands and answers to be an integer.
+    
+    return 0;
+}
+
+```
+
+The points to consider: 
++ The operation between float and integer will always return a float as an answer.
++ The operation between integer and integer will always return a integer as an answer.
++ The operation between float and float will always return a float as an answer.
+
+
+##### Relational Operators
+
+Operators such as :
+> ">" Greater than
+> "<" Lesser than
+> "==" Is equal to
+> "!=" Is not equal to
+> ">" Greater than
+> "<" Less than
+> ">=" Greater than or equal to
+> "<=" Less than or equal to
+
+Use cases:
+```C
+#include <stdio.h>
+
+int main()
+
+{
+    // == is equal to
+    int a = 2;
+    int b = 2;
+
+    printf("'==' example: a == b = %d\n \a", a == b);
+    // if a and b are equal to each other then it will print 1. 1 is true while 0 is false.
+
+    printf("'!=' example: a != b = %d\n \a", a != b);
+    // if a and b are not equal to each other then it will print 0. 1 is true while 0 is false.
+
+    printf("'>=' example: a >= b = %d\n \a", a >= b);
+    // if a is greater than or equals to b then it will print 1. 1 is true while 0 is false.
+
+    printf("'<=' example: a <= b = %d\n \a", a <= b);
+    // if a is lesser than or equals to b then it will print 1. 1 is true while 0 is false.
+
+    printf("'>' example: a > b = %d\n \a", a > b);
+    // if a is greater than b then it will print 0. 1 is true while 0 is false.
+
+    printf("'<' example: a < b = %d\n \a", a < b);
+    // if a is lesser than b then it will print 0. 1 is true while 0 is false.
+
+
+
+    return 0;
+} 
+```
+##### Logical & Bitwise Operators
+
+###### Logical 
+
+Operators such as :
+
+> "&&" Both the operands are suppose to be true. Dono!
+> "||" One of the operands must be true. Dono me se koi ek!
+> "!" If it is true, it prints false. Theek ulta.
+
+Use cases:
+```C
+#include <stdio.h>
+
+void main()
+{
+    int a, b;
+    printf("Enter the values for a & b respectfully: \n");
+    scanf("%d%d", &a, &b);
+    
+    printf("'&&': (%d && %d) = %d \n", a, b, a && b); 
+    // Both of them needs to be true.
+    printf("'||': (%d || %d) = %d \n", a, b, a || b); 
+    // Anyone of them needs to be true.
+    printf("'!': !(%d && %d) = %d \n", a, b, !(a&&b)); 
+    // Here, we were suppose to get false but we got true. This is what '!' does as shown in the syntax.
+}
+```
+###### Bitwise
+
+> "&" AND : 
+> "|" OR : 
+> "^" XOR or Exclusive OR : 
