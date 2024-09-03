@@ -12,11 +12,11 @@
 
 Operators such as :
 
-> "+" Addition
-> "-" Subtraction
-> "*" Multiplication
-> "/" Division
-> "%" Modulus
+- "+" Addition
+- "-" Subtraction
+- "*" Multiplication
+- "/" Division
+- "%" Modulus
 
 Use cases:
 ```C
@@ -64,14 +64,14 @@ The points to consider:
 ##### Relational Operators
 
 Operators such as :
-> ">" Greater than
-> "<" Lesser than
-> "==" Is equal to
-> "!=" Is not equal to
-> ">" Greater than
-> "<" Less than
-> ">=" Greater than or equal to
-> "<=" Less than or equal to
+- ">" Greater than
+- "<" Lesser than
+- "==" Is equal to
+- "!=" Is not equal to
+- ">" Greater than
+- "<" Less than
+- ">=" Greater than or equal to
+- "<=" Less than or equal to
 
 Use cases:
 ```C
@@ -113,9 +113,9 @@ int main()
 
 Operators such as :
 
-> "&&" Both the operands are suppose to be true. Dono!
-> "||" One of the operands must be true. Dono me se koi ek!
-> "!" If it is true, it prints false. Theek ulta.
+- "&&" Both the operands are suppose to be true. Dono!
+- "||" One of the operands must be true. Dono me se koi ek!
+- "!" If it is true, it prints false. Theek ulta.
 
 Use cases:
 ```C
@@ -137,6 +137,6 @@ void main()
 ```
 ###### Bitwise
 
-> "&" AND : 
->  "|" OR : 
-> "^" XOR or Exclusive OR : 
+- "&" AND : 
+-  "|" OR : 
+- "^" XOR or Exclusive OR : 
