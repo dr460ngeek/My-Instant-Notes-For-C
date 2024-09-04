@@ -123,6 +123,7 @@ Use cases:
 
 void main()
 {
+    // Logical operators.
     int a, b;
     printf("Enter the values for a & b respectfully: \n");
     scanf("%d%d", &a, &b);
@@ -137,6 +138,50 @@ void main()
 ```
 ###### Bitwise
 
-- "&" AND : 
--  "|" OR : 
-- "^" XOR or Exclusive OR : 
+It converts the integeral operands into binary and checks if it's true or not.
+
+- "&" AND. 
+-  "|" OR.
+- "^" XOR or Exclusive OR.
+- "~" is the binary one's complement operators. ___Not so important as of now___
+- "<<" is the binary left shift operators. ___Not so important as of now___
+- ">>" is the binary right shift operators. ___Not so important as of now___
+```C
+#include <stdio.h>
+void main()
+{
+    // Bitwise operator. 
+    int c, d;
+    printf("Enter the value of 'c': \n");
+    scanf("%d", &c);
+    printf("Enter the value of 'd': \n");
+    scanf("%d", &d);
+    // It converts the integeral operands into binary and checks if it's true or not.
+
+
+    printf("'&': %d & %d = %d \n", c, d, c==d & c<d); 
+    printf("'|': %d | %d = %d \n", c, d, c==d | c==d); 
+    printf("'^': %d ^ %d = %d \n", c, d, c==d ^ c==d); 
+    
+/*--------------------------------------------------------------------------------------------------------------*/
+}
+```
+### Operators Precedence 
+
+|Category      |Operators                         |Associativity |
+|--------------|----------------------------------|--------------|
+|Postfix       |() [] -> . ++ - -                 |Left to right |
+|Unary         |+ - ! ~ ++ - - (type)* & sizeof   |Right to left |
+|Multiplicative|* / %                             |Left to right |
+|Additive	   |+ -	                              |Left to right |
+|Shift         |<< >>	                          |Left to right |
+|Relational	   |< <= > >=	                      |Left to right |
+|Equality	   |== !=                             |Left to right |
+|Bitwise AND   |&                                 |Left to right |
+|Bitwise XOR   |^	                              |Left to right |
+|Bitwise OR	   | "|"	                          |Left to right |
+|Logical AND   |&&	                              |Left to right |
+|Logical OR	   | "||"	                          |Left to right |
+|Conditional   | ?:	                              |Right to left |
+|Assignment	   | = += -= *= /= %=>>= <<= &= ^= |= |Right to left |
+|Comma	       |,	                              |Left to right |
