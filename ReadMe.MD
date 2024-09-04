@@ -1,4 +1,4 @@
-# IMPORTANT NOTES FOR C.
+# <b><i>IMPORTANT NOTES FOR C </i></b>
 ## Operators
 
 ### There are 5 types of operators in C language
