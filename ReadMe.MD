@@ -1,4 +1,5 @@
-# Operators
+# IMPORTANT NOTES FOR C.
+## Operators
 
 ### There are 5 types of operators in C language
 
@@ -166,7 +167,7 @@ void main()
 /*--------------------------------------------------------------------------------------------------------------*/
 }
 ```
-### Operators Precedence & Associativity.
+### Operators Precedence & Associativity
 
 |Category      |Operators                         |Associativity |
 |--------------|----------------------------------|--------------|
@@ -179,9 +180,80 @@ void main()
 |Equality	   |== !=                             |Left to right |
 |Bitwise AND   |&                                 |Left to right |
 |Bitwise XOR   |^	                              |Left to right |
-|Bitwise OR	   | "|"	                          |Left to right |
+|Bitwise OR	   |"|" 	                          |Left to right |
 |Logical AND   |&&	                              |Left to right |
-|Logical OR	   | "||"	                          |Left to right |
-|Conditional   | ?:	                              |Right to left |
-|Assignment	   | = += -= *= /= %=>>= <<= &= ^= |= |Right to left |
+|Logical OR	   |"||"	                          |Left to right |
+|Conditional   |?:	                              |Right to left |
+|Assignment	   |= += -= *= /= %=>>= <<= &= ^=  |= |Right to left |
 |Comma	       |,	                              |Left to right |
+
+## Format Specifiers & Escape Sequences
+
+### Format Specifier & Constants
+
+#### Format specifier
+
+|S no.|Specifiers     | Type      |
+|-----|---------------|-----------|
+|1.   |%d             |Integer    |
+|2.   |%f             |Float      |
+|3.   |%c             |Character  |
+|4.   |%l             |Long       |
+|5.   |%lf            |Double     |
+|6.   |%Lf            |Long Double|
+
+>Float (%f) is an interesting one:
+
+```C
+
+
+{
+    int a = 1.3333 ;
+    printf("%f",a);
+    printf("%.2f", a) // Prints only two decimal points(.).
+    printf("%10.f |",a); /* Prints the float according to accuracy of the number given after %.
+    Since the number is in (+), it will leave excessive spaces before the float number while printing*/
+    printf("%-10.f |",a); /* Prints the float according to accuracy of the number given after %.
+    Since the number is in (-), it will leave excessive spaces after the float number while printing*/
+}
+
+```
+
+#### Constants
+
+Points to be noted!
++ Constants are immutable.
++ Constants can be pre-processed as well with "#define".
+
+```C
+#include <stdio.h>
+void main()
+{
+    const float a = 4.33 ;
+    a = 2.22 ; 
+    printf("%f", a); /* Will show an error because  a's value has
+    become immutable as we assigned it as constant before. */
+}
+```
+Pre-processed Constants:
+```C
+#include <stdio.h>
+#define PI 3.14
+
+{
+    printf("%f", PI);
+}
+```
+
+### Escape Sequences
+
+|Escape Sequence              |Description                        |
+|-----------------------------|-----------------------------------|
+|\t                           |Inserts a tab                      |
+|\b                           |Inserts a backspace                |
+|\n                           |Inserts a newline.                 |
+|\r                           |Inserts a carriage return.         |
+|\f                           |Inserts a form feed.               |
+|\’                           |Inserts a single quote character.  |
+|\”                           |Inserts a double quote character.  |
+|\\\                          |Inserts a backslash character.     |
