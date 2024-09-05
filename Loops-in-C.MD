@@ -5,7 +5,7 @@ There are 3 types of loops:
 
 + do-while loop
 + while loop
-+ forloop
++ for loop
 
 ### do-while loop:
 
