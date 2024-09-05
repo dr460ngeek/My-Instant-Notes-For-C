@@ -1,4 +1,5 @@
 # Loops
+Does that sound like poop? to me it does but I respect it way more than I respect poops.
 
 There are 3 types of loops:
 
@@ -8,10 +9,16 @@ There are 3 types of loops:
 
 ### do-while loop:
 
-* It is executed atleast once regardless of the conditions.
 * It first executes and then checks the condition.
+* It is executed atleast once regardless of the conditions.
 
 Syntax:
+```C
+do {
+    // code to be executed
+} while(/*condition*/);
+```
+Use case:
 ```C
 #include <stdio.h>
 
