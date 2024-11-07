@@ -37,3 +37,21 @@ int main()
 }
 
 ```
+
+### while loop:
+
+* Unlike do-while loop, It checks condition and then executes loops.
+* There is no semicolon in the syntax of while loop unlike do-while loop.
+
+Syntax:
+```C
+while(/*conditon*/) {
+// code to be executed.
+}
+```
+Use Case:
+```C
+while(i<=30) {
+    printf("%d", i++);
+}
+```
