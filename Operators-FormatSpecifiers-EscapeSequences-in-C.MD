@@ -1,10 +1,6 @@
 # <b><i>IMPORTANT NOTES FOR C </i></b>
 ## Operators
 
-## Index
-
-- [Logical Operators](#####logical-&-bitwise-operators)
-
 ### There are 5 types of operators in C language
 
 + Arithmetic Operators
