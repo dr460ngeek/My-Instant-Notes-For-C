@@ -1,13 +1,14 @@
 # Loops
 Does that sound like poop? to me it does but I respect it way more than I respect poops.
 
-There are 3 types of loops:
+There are 2 types of loops:
 
-+ do-while loop
-+ while loop
-+ for loop
++ Exit controlled loop.
+- There is only 1 category of exit control loop which is "do_while".
++ Entry contolled loop.
+- There are two categories of entry controlled loops. while() loop and for() loop.
 
-### do-while loop:
+### do-while loop (exit) :
 
 * It's an Exit controlled loop.
 * It first executes and then checks the condition.
@@ -39,7 +40,7 @@ int main()
 
 ```
 
-### while loop:
+### while loop (entry) :
 
 * It's an Entry Controlled loop.
 * Unlike do-while loop, It checks condition and then executes loops.
@@ -58,7 +59,7 @@ while(i<=30) {
 }
 ```
 
-### for loop:
+### for loop (entry) :
 
 * It's an Entry Controlled loop.
 * Similar to while loop. For-loop has the ability to assign the value for it's iteration and increment/decrement the value of it. 
